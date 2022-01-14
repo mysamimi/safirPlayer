@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Safir Audio Player</title>
+  <link
+  rel="stylesheet"
+  href="/asset/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+  crossorigin="anonymous"
+/>
+</head>
+<body>
+  <div id="player"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      var options = {
+        "deckCount": 2,
+        "media": [
+          {
+            "solo": true,
+            "volume": 0.70,
+            "fade_in": 1000,
+            "fade_out": 10000,
+            "filename": "Greeting Announcement01.mp3"
+          },{
+            "solo": false,
+            "volume": 0.75,
+            "fade_in": 5000,
+            "fade_out": 100,
+            "filename": "01-intro only.mp3"
+          },{
+            "solo": false,
+            "volume": 1,
+            "fade_in": 1000,
+            "fade_out": 1000,
+            "filename": "titraj2.mp3"
+          },{
+            "solo": true,
+            "volume": 0.06,
+            "fade_in": 1000,
+            "fade_out": 200,
+            "filename": "07-tel ring-3.mp3"
+          },{
+            "solo": true,
+            "volume": 0.05,
+            "fade_in": 1000,
+            "fade_out": 6000,
+            "filename": "04.1-labbaikMix.mp3"
+          },{
+            "solo": true,
+            "volume": 0.30,
+            "fade_in": 1000,
+            "fade_out": 3000,
+            "filename": "04-sahifeh.mp3"
+          },{
+            "solo": true,
+            "volume": 1,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "05-senj.mp3"
+          },{
+            "solo": true,
+            "volume": 0.06,
+            "fade_in": 1000,
+            "fade_out": 200,
+            "filename": "07-tel ring-3.mp3"
+          },{
+            "solo": true,
+            "volume": 0.40,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "Roozi Piremard-e Gorosne.mp3"
+          },{
+            "solo": true,
+            "volume": 0.40,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "09-negarn shodi.mp3"
+          },{
+            "solo": true,
+            "volume": 0.65,
+            "fade_in": 200,
+            "fade_out": 3000,
+            "filename": "Ezne-Vorood_Master_001_MP3_320kbps.mp3"
+          },{
+            "solo": true,
+            "volume": 0.60,
+            "fade_in": 200,
+            "fade_out": 3000,
+            "filename": "10-ghonfoz new2.mp3"
+          },{
+            "solo": true,
+            "volume": 1,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "11-atash.mp3"
+          },{
+            "solo": true,
+            "volume": 1,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "12-risman long.mp3"
+          },{
+            "solo": true,
+            "volume": 0.50,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "13-eyadat.mp3"
+          },{
+            "solo": true,
+            "volume": 0.40,
+            "fade_in": 4000,
+            "fade_out": 4000,
+            "filename": "13.1-JirJirak.mp3"
+          },{
+            "solo": true,
+            "volume": 0.20,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "14-be bar ey baron.mp3"
+          },{
+            "solo": true,
+            "volume": 0.80,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "mix emari edit.mp3"
+          },{
+            "solo": true,
+            "volume": 0.10,
+            "fade_in": 200,
+            "fade_out": 6000,
+            "filename": "16-yabn taha.mp3"
+          },{
+            "solo": true,
+            "volume": 0.90,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "seyed-ezafeh.mp3"
+          },{
+            "solo": true,
+            "volume": 0.80,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "faraj farahmand.mp3"
+          },{
+            "solo": false,
+            "volume": 1,
+            "fade_in": 1000,
+            "fade_out": 4000,
+            "filename": "faraj sedghi.mp3"
+          },{
+            "solo": true,
+            "volume": 1,
+            "fade_in": 1000,
+            "fade_out": 1000,
+            "filename": "Tazakor Emami.m4a"
+          }
+        ]
+};
+      window.player = sfirPlayer('player', options);
+
+    });
+  </script>
+</body>
+</html>
